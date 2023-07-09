@@ -25,7 +25,7 @@ export default function App() {
   </div>
 
     <main className="w-screen md:flex py-16 px-2 md:px-20">
-  <div className="w-3/5 px-10">
+  <div className="w-full md:w-3/5 px-10 mb-3 md:mb-0">
 
 
 
@@ -38,9 +38,10 @@ export default function App() {
   </div>
 
 
-  <div className="w-3/5 flex">
+  <div className="md:px-4 w-full mt-2 md:w-3/5 flex">
       <Input width="80%" label="Enter Tracking Id" />
-      <Button size={"md"} className="bg-blue-400 md:mt-11 md:ml-2 text-white">Track</Button>
+      <Button size={"md"} className="hidden md:block bg-blue-400  md:mt-10 md:ml-2 text-white">Track</Button>
+      <Button size={"xs"} className=" md:hidden bg-blue-400  text-white">Track</Button>
 
     </div>
     
