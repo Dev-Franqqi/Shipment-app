@@ -1,0 +1,12 @@
+.firstSection{
+    background-image: url("./images/erial-photography-container-terminal.jpg");
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    min-height: calc(100vh - 25vh);
+    object-fit: cover;
+    position:relative;
+    filter: brightness(-70);
+    padding-left: 0.5rem;
+    
+}

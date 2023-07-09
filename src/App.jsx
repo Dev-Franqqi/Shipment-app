@@ -1,16 +1,52 @@
 
-import { Navbar } from "@nextui-org/react";
 import Nbar from "./components/Nbar";
 import {Image} from "@nextui-org/react";
-import ShipmentIm from "./components/images/erial-photography-container-terminal.jpg"
+import Styles from "./components/Home.module.css";
+import {Input} from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
 
 export default function App() {
   return (
     <>
    <Nbar />
-   <div className=" w-full bg-black ">
-  <Image className="object-cover h-full w-full" src={ShipmentIm} alt="" />
-</div>
+      <div className={Styles.firstSection}>
+
+
+
+  <div className="px-2 absolute bottom-20 text-white md:text-black">
+
+
+      
+    <h1 className="text-4xl font-bold">SHIP WORLDWIDE</h1>
+    <p className="text-2xl italic">Transportation and logistics</p>
+
+    </div>
+
+  </div>
+
+    <main className="w-screen md:flex py-16 px-2 md:px-20">
+  <div className="w-3/5 px-10">
+
+
+
+    <div className=" text-left">
+    <h2 className="text-3xl md:text-4xl font-semibold mb-5">SHIPMENTS <span className="italic">Tracking</span></h2>
+    <p className="text-md leading-5"><b>TRANSPORTATION & LOGISTICS -</b> Never be in the dark, know the full condition of your package an it's current location </p>
+    </div>
+
+   
+  </div>
+
+
+  <div className="w-3/5 flex">
+      <Input width="80%" label="Enter Tracking Id" />
+      <Button size={"md"} className="bg-blue-400 md:mt-11 md:ml-2 text-white">Track</Button>
+
+    </div>
+    
+  </main>
+
+
 
 
 
