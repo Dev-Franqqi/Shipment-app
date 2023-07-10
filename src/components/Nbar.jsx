@@ -9,7 +9,10 @@ const Box = styled("div", {
 const Layout = ({ children }) => (
     <Box
       css={{
-        maxW: "100%"
+        maxW: "100%",
+        position:"sticky",
+        top:"0",
+        zIndex:"10"
       }}
     >
       {children}
@@ -29,7 +32,7 @@ export default function Nbar() {
 
   return (
     <Layout>
-      <Navbar isBordered variant="sticky">
+      <Navbar isBordered className=" sticky top-0" variant="sticky">
         <Navbar.Brand className="w-full md:w-fit flex justify-between md:block ">
           <Navbar.Toggle className="w-1/5 md:hidden" aria-label="toggle navigation" />
         
