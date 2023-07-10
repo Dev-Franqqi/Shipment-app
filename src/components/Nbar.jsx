@@ -29,7 +29,7 @@ export default function Nbar() {
 
   return (
     <Layout>
-      <Navbar shouldHideOnScroll="true" isBordered variant="sticky">
+      <Navbar isBordered variant="sticky">
         <Navbar.Brand className="w-full md:w-fit flex justify-between md:block ">
           <Navbar.Toggle className="w-1/5 md:hidden" aria-label="toggle navigation" />
         
