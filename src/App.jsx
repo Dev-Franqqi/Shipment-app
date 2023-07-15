@@ -1,16 +1,21 @@
-import Collapsible from "./components/Collapsible";
-import Nbar from "./components/Nbar";
-import {Image} from "@nextui-org/react";
+// import Collapsible from "./components/Collapsible";
+
+import { Link } from "react-router-dom";
 import Styles from "./components/Home.module.css";
-import {Input} from "@nextui-org/react";
-import {Button} from "@nextui-org/react";
+import Ship from "./components/images/blog1.jpg"
 import About from "./components/images/about1.jpg"
 import Translate from "./components/Translate";
 import Iconsection from "./components/Iconsection";
+import Airfr from "./components/images/blog2.jpg"
+import Wareh from "./components/images/blog3.jpg" 
+import Packg from "./components/images/blog4.jpg" 
+import Raill from "./components/images/blog5.jpg" 
+import Trucki from "./components/images/blog6.jpg"
+ 
 export default function App() {
   return (
     <>
-   <Nbar />
+
       <div className={Styles.firstSection}>
 
 
@@ -44,11 +49,11 @@ export default function App() {
  
    
 
-      <Input width="80%" className="border-2 border-black" label="Enter Tracking Id" />
+      <input className="border-2 border-black" placeholder="Enter Tracking Id" />
       
 
 
-      <Button size={"md"} className="ml-2 mt-2 bg-blue-400  md:mt-10 md:ml-2 text-white">Track</Button>
+      <button className="ml-2 mt-2 bg-blue-400  md:mt-10 md:ml-2 text-white">Track</button>
 
 
      
@@ -66,10 +71,10 @@ export default function App() {
 <p>
 We clear imports through any country customs and deliver quick and easy with our customs brokerage programs. From high volume imports to small container loads, we provide transport and customs clearance to importers worldwide.</p>
 
-<Button size="md" className="bg-white mb-3 mx-auto text-black mt-3" >Learn More ...</Button>
+<button className="bg-white mb-3 mx-auto text-black mt-3" >Learn More ...</button>
 
 
-<Image src={About} className="mt-5 rounded-md" alt="" />
+<img src={About} className="mt-5 rounded-md" alt="" />
 
 
 
@@ -113,25 +118,112 @@ We clear imports through any country customs and deliver quick and easy with our
 <section className="px-5 text-center  bg-gray-100 py-5 mt-5">
   <h4 className="text-3xl font-bold mb-2">International delivery <i className="font-bold">without the worry</i></h4>
   <p className="text-lg">We are proud to serve you and have you trust us, it's been 9 years and we still hace you</p>
-  <Button className="shadow mx-auto border-2 mt-4 border-sky-500  text-sky-500">Get in touch</Button>
+  <button className="shadow mx-auto border-2 mt-4 border-sky-500  text-sky-500">Get in touch</button>
 </section>
 
 <section className="mt-10 px-4">
 
   <h4 className="text-4xl font-bold">WHY CHOOSE US</h4>
 
-  <Collapsible />
+  {/* <Collapsible /> */}
 
 </section>
 
 <Iconsection />
 
-<section className="text-center px-6 bg-gray-300 py-5 mt-4">
+
+<section className="mt-3 text-zinc-600 bg-gray-100 py-4 px-3">
+  
+<section className="text-center  py-5 mt-4">
   <p className="font-medium space-x-2 tracking-wider">WE HAVE A WIDE NETWORK OF OFFICES IN ALL MAJOR LOCATIONS TO HELP YOU WITH THE SERVICES WE OFFER</p>
 </section>
-
-<section className="mt-3 py-4">
   <h2 className="text-center text-2xl font-bold">Our <i>Services</i></h2>
+  <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+    
+    <img src={Ship} alt="" />
+
+
+      
+
+    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Ocean Freight</h3> 
+    <p className=" text-lg px-3">
+      With our broad range of Ocean Freight products covering different equipment types and consolidation services, we ensure your cargo
+      reaches the right place, at the right time in a cost-efficient way.</p>   
+      {/* <Link>Read more</Link> */}
+    </section>
+
+
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+      <img src={Airfr} alt=""/>
+
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Air Freight</h3>
+      <p className="text-lg px-3">This category of products that predominantly use an air mode and offers a choice and offers a choice in delivery speed to best suit customer requirements.</p>
+      <p className="text-lg px-3">
+        Working together with carefully selected carriers..
+      </p>
+      {/* <Link>Read more</Link> */}
+
+    </section>
+
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+
+
+    <img src={Wareh} alt="" />
+
+    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Warehousing</h3>
+    <p className="text-lg px-3">At ASAP Prime Logistics we offer a comprehensice suit of capabilities and work with a range of best-in-class software partners</p>
+    <p className="text-lg px-3">Our state-of-the-art systems monitors andn control all criticcal warehouse processes</p>
+
+    {/* <Link>Read more</Link> */}
+    </section>
+
+
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+      <img src={Packg} alt="" />
+
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Package & Store </h3>
+      <p className="text-lg px-3">ASAP Prime Logistics dedicated and shared user warehousing solutions are not just about olding stock. There are a wider range of additional services that we offer, as part of an overall...</p>
+
+      {/* <Link>Read more</Link> */}
+
+    </section>
+
+
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+      <img src={Raill} alt="" />
+
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Railway Logistics</h3>
+      <p className="text-lg px-3">ASAP Peeimw Logistics has a flexible, reliable and efficient overland transportation offering, including Road, Rail and Intermodal Services. We have a global capability with services operating...</p>
+
+      {/* <Link>Read more</Link> */}
+    </section>
+
+
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+
+  <img src={Trucki} alt="" />
+
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Trucking</h3>
+
+  <p className="text-lg px-3">We understand the importance of delivery of goods to their ultimate destination. As general freight forwarders we can arrange shipment of group package and full loads...</p>
+
+  {/* <Link>Read more</Link> */}
+</section>
+
+
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+
+  {/* <img src={Doort} alt="" /> */}
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Door to Door Delivery</h3>
+  <p className="text-lg px-3">This is the modt common and convenient way of shipment for customers. In this case te custimer is free to all arrangements related to the ship freight container shipments</p>
+
+</section>
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+
+  
+   
+
+</section>
 </section>
 
 
