@@ -11,33 +11,25 @@ import Wareh from "./components/images/blog3.jpg"
 import Packg from "./components/images/blog4.jpg" 
 import Raill from "./components/images/blog5.jpg" 
 import Trucki from "./components/images/blog6.jpg"
- 
+import Door from "./components/images/door.png"
+import Custom from "./components/images/custom.png"
+import Contract from "./components/images/contract.jpg"
+import Nbar from "./components/Nbar";
+import Collapsible from "./components/Collapsible";
 export default function App() {
   return (
     <>
 
-      <div className={Styles.firstSection}>
+    <Nbar />
 
-
-
-  <div className="px-2 absolute bottom-20 text-white md:text-black">
-
-
-   <Translate />
-    <h1 className="text-4xl font-bold">SHIP WORLDWIDE</h1>
-    <p className="text-2xl italic">Transportation and logistics</p>
-
-    </div>
-
-  </div>
 
     <main className="w-screen md:flex py-16 px-2 ">
   <div className="w-full md:w-3/5 px-2 text-left mb-3 md:mb-0">
 
 
 
-    <div className=" text-left">
-    <h2 className="text-3xl md:text-4xl font-semibold mb-5">SHIPMENTS <span className="italic">Tracking</span></h2>
+    <div className="text-left">
+    <h2 className="text-3xl md:text-4xl font-bold mb-5">SHIPMENTS TRACKING</h2>
     <p className="text-md leading-5"><b>TRANSPORTATION & LOGISTICS -</b> Never be in the dark, know the full condition of your package an it's current location </p>
     </div>
 
@@ -45,15 +37,15 @@ export default function App() {
   </div>
 
 
-  <div className="md:px-4 w-full mt-2 sm:w-3/5 md:flex">
+  <div className=" w-full mt-2 ">
  
    
 
-      <input className="border-2 border-black" placeholder="Enter Tracking Id" />
+      <input className="border-2 w-3/5 rounded-md h-10 px-2 border-black text-lg font-semibold" placeholder="Enter Tracking Id" />
       
 
 
-      <button className="ml-2 mt-2 bg-blue-400  md:mt-10 md:ml-2 text-white">Track</button>
+      <button className="ml-2 mt-2 bg-blue-600 w-1/5 text-xl px-3 py-1.5 rounded-md text-white">Track</button>
 
 
      
@@ -63,7 +55,7 @@ export default function App() {
    
     
   </main>
-  <section className="text-white text-center relatve h-fit w-screen bg-black px-4 py-10">
+  <section className="text-white text-center relatve h-fit w-screen bg-black px-4 py-10 leading-8">
      <h3 className=" text-3xl text-center font-bold mb-5"> WELCOME TO ASAP PRIME LOGISTICS</h3>
 
      <p>ASAP Prime Logistics is a world leader in global logistics for companies of all sizes. We maximize the reach of your international sales and distribution efforts, offering consultation and operations for a seamless supply chain solution!
@@ -71,7 +63,7 @@ export default function App() {
 <p>
 We clear imports through any country customs and deliver quick and easy with our customs brokerage programs. From high volume imports to small container loads, we provide transport and customs clearance to importers worldwide.</p>
 
-<button className="bg-white mb-3 mx-auto text-black mt-3" >Learn More ...</button>
+<button className="bg-white mb-3 mx-auto w-3/5 rounded-md h-10 text-xl text-black mt-3" >Learn More ...</button>
 
 
 <img src={About} className="mt-5 rounded-md" alt="" />
@@ -116,16 +108,16 @@ We clear imports through any country customs and deliver quick and easy with our
 </section>
 
 <section className="px-5 text-center  bg-gray-100 py-5 mt-5">
-  <h4 className="text-3xl font-bold mb-2">International delivery <i className="font-bold">without the worry</i></h4>
+  <h4 className="text-3xl font-bold mb-2">International delivery without the worry</h4>
   <p className="text-lg">We are proud to serve you and have you trust us, it's been 9 years and we still hace you</p>
-  <button className="shadow mx-auto border-2 mt-4 border-sky-500  text-sky-500">Get in touch</button>
+  <button className="shadow mx-auto border-2 w-3/5 rounded-md h-10 text-xl mt-5 border-sky-500  text-sky-500">Get in touch</button>
 </section>
 
 <section className="mt-10 px-4">
 
-  <h4 className="text-4xl font-bold">WHY CHOOSE US</h4>
+  <h4 className="text-3xl font-bold">WHY CHOOSE US</h4>
 
-  {/* <Collapsible /> */}
+  <Collapsible />
 
 </section>
 
@@ -137,7 +129,7 @@ We clear imports through any country customs and deliver quick and easy with our
 <section className="text-center  py-5 mt-4">
   <p className="font-medium space-x-2 tracking-wider">WE HAVE A WIDE NETWORK OF OFFICES IN ALL MAJOR LOCATIONS TO HELP YOU WITH THE SERVICES WE OFFER</p>
 </section>
-  <h2 className="text-center text-2xl font-bold">Our <i>Services</i></h2>
+  <h2 className="text-center text-black text-3xl mt-3 font-bold">Our <i>Services</i></h2>
   <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
     
     <img src={Ship} alt="" />
@@ -145,23 +137,23 @@ We clear imports through any country customs and deliver quick and easy with our
 
       
 
-    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Ocean Freight</h3> 
+    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Ocean Freight</h3> 
     <p className=" text-lg px-3">
       With our broad range of Ocean Freight products covering different equipment types and consolidation services, we ensure your cargo
       reaches the right place, at the right time in a cost-efficient way.</p>   
-      {/* <Link>Read more</Link> */}
+      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
     </section>
 
 
     <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
       <img src={Airfr} alt=""/>
 
-      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Air Freight</h3>
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Air Freight</h3>
       <p className="text-lg px-3">This category of products that predominantly use an air mode and offers a choice and offers a choice in delivery speed to best suit customer requirements.</p>
       <p className="text-lg px-3">
         Working together with carefully selected carriers..
       </p>
-      {/* <Link>Read more</Link> */}
+      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
 
     </section>
 
@@ -170,21 +162,21 @@ We clear imports through any country customs and deliver quick and easy with our
 
     <img src={Wareh} alt="" />
 
-    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Warehousing</h3>
+    <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Warehousing</h3>
     <p className="text-lg px-3">At ASAP Prime Logistics we offer a comprehensice suit of capabilities and work with a range of best-in-class software partners</p>
     <p className="text-lg px-3">Our state-of-the-art systems monitors andn control all criticcal warehouse processes</p>
 
-    {/* <Link>Read more</Link> */}
+    <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
     </section>
 
 
     <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
       <img src={Packg} alt="" />
 
-      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Package & Store </h3>
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Package & Store </h3>
       <p className="text-lg px-3">ASAP Prime Logistics dedicated and shared user warehousing solutions are not just about olding stock. There are a wider range of additional services that we offer, as part of an overall...</p>
 
-      {/* <Link>Read more</Link> */}
+      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
 
     </section>
 
@@ -192,10 +184,10 @@ We clear imports through any country customs and deliver quick and easy with our
     <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
       <img src={Raill} alt="" />
 
-      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Railway Logistics</h3>
-      <p className="text-lg px-3">ASAP Peeimw Logistics has a flexible, reliable and efficient overland transportation offering, including Road, Rail and Intermodal Services. We have a global capability with services operating...</p>
-
-      {/* <Link>Read more</Link> */}
+      <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Railway Logistics</h3>
+      <p className="text-lg px-3">ASAP Prime Logistics has a flexible, reliable and efficient overland transportation offering, including Road, Rail and Intermodal Services. We have a global capability with services operating...</p>
+``
+      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
     </section>
 
 
@@ -203,31 +195,72 @@ We clear imports through any country customs and deliver quick and easy with our
 
   <img src={Trucki} alt="" />
 
-  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Trucking</h3>
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Trucking</h3>
 
   <p className="text-lg px-3">We understand the importance of delivery of goods to their ultimate destination. As general freight forwarders we can arrange shipment of group package and full loads...</p>
 
-  {/* <Link>Read more</Link> */}
+  <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
 </section>
 
 
 <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
 
-  {/* <img src={Doort} alt="" /> */}
-  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3">Door to Door Delivery</h3>
-  <p className="text-lg px-3">This is the modt common and convenient way of shipment for customers. In this case te custimer is free to all arrangements related to the ship freight container shipments</p>
+  <img src={Door} alt="" />
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Door to Door Delivery</h3>
+  <p className="text-lg px-3">This is the most common and convenient way of shipment for customers. In this case te custimer is free to all arrangements related to the ship freight container shipments</p>
 
 </section>
 <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
 
-  
+  <img src={Contract} alt="" />
+
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Contract Logistics</h3>
+  <p className="text-lg px-3">
+
+    We have activities such as planning and designing supply chains, designing facilities, warehousing,transporting and distributing goods, processing orders, collecting payments, managing inventory and even providing certain aspects of customer service.
+  </p>
    
 
 </section>
+
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+  <img src={Custom} alt="" />
+  <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Custom Brokerage</h3>
+  <p className="text-lg px-3">
+    Includes tarrif, custom laws, rules and regulatins for the clearance of imported and exported goods ro merchandise from custom authority; preparation of import and export documents including computation and payment duties, taxes and other charges accruing thereon.
+  </p>
+</section>
+</section>
+
+<section className="h-72 bg-gradient-to-bl from-black py-20 to-zinc-700 text-center px-4 text-white">
+
+
+
+<h2 className="text-3xl font-bold ">We Provide</h2>
+<p className="text-lg mt-4">The Best Sea And Air Freight Services.</p>
+<p className="text-lg mb-4">
+
+You Can Book Your Shipping From any Country and you would be glad you did.
+</p>
+
+<div className="flex space-x-2 justify-center">
+
+<button className=" bg-white text-black rounded-md py-2">
+  Learn More
+</button>
+
+<button className="w-fit py-1  rounded-md border-2 border-white px-1">
+  Reach Out to Us Now
+</button>
+</div>
+
+
 </section>
 
 
-
+<section className="text-center mt-4">
+  <h3 className="text-3xl font-bold">What People Say</h3>
+</section>
 
 
 

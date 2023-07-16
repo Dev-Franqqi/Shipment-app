@@ -1,4 +1,5 @@
-import { Accordion } from "@radix-ui/react-accordion";
+import { Collapse } from "@nextui-org/react";
+import {Text} from "@nextui-org/react";
 
 export default function Collapsible() {
   return (
