@@ -1,10 +1,8 @@
 // import Collapsible from "./components/Collapsible";
 
 import { Link } from "react-router-dom";
-import Styles from "./components/Home.module.css";
 import Ship from "./components/images/blog1.jpg"
 import About from "./components/images/about1.jpg"
-import Translate from "./components/Translate";
 import Iconsection from "./components/Iconsection";
 import Airfr from "./components/images/blog2.jpg"
 import Wareh from "./components/images/blog3.jpg" 
@@ -16,14 +14,20 @@ import Custom from "./components/images/custom.png"
 import Contract from "./components/images/contract.jpg"
 import Nbar from "./components/Nbar";
 import Collapsible from "./components/Collapsible";
+import { Input } from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
+import Firstcomp from "./components/Firstcomp";
 export default function App() {
   return (
     <>
 
     <Nbar />
 
+    <Firstcomp />
 
-    <main className="w-screen md:flex py-16 px-2 ">
+
+
+    <main className="w-screen md:flex md:justify-center md:space-x-5 py-16 px-2 ">
   <div className="w-full md:w-3/5 px-2 text-left mb-3 md:mb-0">
 
 
@@ -37,11 +41,11 @@ export default function App() {
   </div>
 
 
-  <div className=" w-full mt-2 ">
+  <div className=" w-full md:w-3/5 mt-2 ">
  
    
 
-      <input className="border-2 w-3/5 rounded-md h-10 px-2 border-black text-lg font-semibold" placeholder="Enter Tracking Id" />
+      <input className="border w-3/5 rounded-md h-10 px-2 border-black text-lg font-semibold" placeholder="Enter Tracking Id" />
       
 
 
@@ -55,18 +59,21 @@ export default function App() {
    
     
   </main>
-  <section className="text-white text-center relatve h-fit w-screen bg-black px-4 py-10 leading-8">
-     <h3 className=" text-3xl text-center font-bold mb-5"> WELCOME TO ASAP PRIME LOGISTICS</h3>
+  <section className="text-white text-center bg-gradient-to-br from-blue-950 to-black relatve h-fit w-screen px-4 py-10 leading-8 md:flex md:text-left md:pl-20 md:space-x-20">
+    <div className="md:w-2/5">
 
-     <p>ASAP Prime Logistics is a world leader in global logistics for companies of all sizes. We maximize the reach of your international sales and distribution efforts, offering consultation and operations for a seamless supply chain solution!
+     <h3 className=" text-3xl  font-bold mb-5"> WELCOME TO ASAP PRIME LOGISTICS</h3>
+
+     <p className="text-lg">ASAP Prime Logistics is a world leader in global logistics for companies of all sizes. We maximize the reach of your international sales and distribution efforts, offering consultation and operations for a seamless supply chain solution!
      </p>
 <p>
 We clear imports through any country customs and deliver quick and easy with our customs brokerage programs. From high volume imports to small container loads, we provide transport and customs clearance to importers worldwide.</p>
 
-<button className="bg-white mb-3 mx-auto w-3/5 rounded-md h-10 text-xl text-black mt-3" >Learn More ...</button>
+<button className="bg-white mb-3 mx-auto w-3/5 rounded-md h-10 text-xl text-black mt-3 md:w-fit md:text-lg md:px-3 md:mt-5 md:bg-blue-600 md:text-white" >Learn More ...</button>
+</div>
 
 
-<img src={About} className="mt-5 rounded-md" alt="" />
+<img src={About} className="mt-5 rounded-md md:w-2/5 md:border-8 md:border-white"  alt="" />
 
 
 
@@ -79,10 +86,10 @@ We clear imports through any country customs and deliver quick and easy with our
     </section>
 
     
-  <section className="w-screen py-4 text-center ">
+  <section className="w-screen py-4 text-center md:flex md:text-left">
 
 
-<div className="px-3 w-full shadow-lg mx-auto bg-white h-fit py-10">
+<div className="px-5 bg-white shadow-lg mx-auto w-full mt-4 h-fit py-10">
 
 
   <h4 className="text-2xl mt-5 font-semibold mb-4  border-l-8 border-l-black pl-2">TRUCKING</h4>
@@ -91,7 +98,7 @@ We clear imports through any country customs and deliver quick and easy with our
 
 </div>
 
-<div className=" px-5 bg-whiten shadow-lg mx-auto w-full mt-4 h-fit py-10">
+<div className=" px-5 bg-white shadow-lg mx-auto w-full mt-4 h-fit py-10" >
   <h4 className="text-2xl border-l-8 border-l-black font-semibold mt-5 mb-4 pl-2">AIR FREIGHT</h4>
  
 
@@ -107,13 +114,15 @@ We clear imports through any country customs and deliver quick and easy with our
 </div>
 </section>
 
-<section className="px-5 text-center  bg-gray-100 py-5 mt-5">
+<section className="px-5 text-center  bg-gray-100 py-5 mt-5 md:py-10">
   <h4 className="text-3xl font-bold mb-2">International delivery without the worry</h4>
   <p className="text-lg">We are proud to serve you and have you trust us, it's been 9 years and we still hace you</p>
-  <button className="shadow mx-auto border-2 w-3/5 rounded-md h-10 text-xl mt-5 border-sky-500  text-sky-500">Get in touch</button>
+  <button className="shadow mx-auto border-2 w-3/5 rounded-md h-10 text-xl mt-5 border-sky-500  text-sky-500 md:w-fit md:px-3">Get in touch</button>
 </section>
+<section className="md:flex">
 
-<section className="mt-10 px-4">
+
+<section className="mt-10 px-4 w-4/5">
 
   <h4 className="text-3xl font-bold">WHY CHOOSE US</h4>
 
@@ -124,13 +133,22 @@ We clear imports through any country customs and deliver quick and easy with our
 <Iconsection />
 
 
+</section>
+
+
 <section className="mt-3 text-zinc-600 bg-gray-100 py-4 px-3">
   
 <section className="text-center  py-5 mt-4">
   <p className="font-medium space-x-2 tracking-wider">WE HAVE A WIDE NETWORK OF OFFICES IN ALL MAJOR LOCATIONS TO HELP YOU WITH THE SERVICES WE OFFER</p>
 </section>
+
+
   <h2 className="text-center text-black text-3xl mt-3 font-bold">Our <i>Services</i></h2>
-  <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+
+
+<div className="md:w-5/6 md:mx-auto md:flex md:flex-wrap">
+
+  <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
     
     <img src={Ship} alt="" />
 
@@ -145,7 +163,7 @@ We clear imports through any country customs and deliver quick and easy with our
     </section>
 
 
-    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
       <img src={Airfr} alt=""/>
 
       <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Air Freight</h3>
@@ -157,7 +175,7 @@ We clear imports through any country customs and deliver quick and easy with our
 
     </section>
 
-    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
 
 
     <img src={Wareh} alt="" />
@@ -170,7 +188,7 @@ We clear imports through any country customs and deliver quick and easy with our
     </section>
 
 
-    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
       <img src={Packg} alt="" />
 
       <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Package & Store </h3>
@@ -181,7 +199,7 @@ We clear imports through any country customs and deliver quick and easy with our
     </section>
 
 
-    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+    <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
       <img src={Raill} alt="" />
 
       <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Railway Logistics</h3>
@@ -191,7 +209,7 @@ We clear imports through any country customs and deliver quick and easy with our
     </section>
 
 
-<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
 
   <img src={Trucki} alt="" />
 
@@ -203,14 +221,14 @@ We clear imports through any country customs and deliver quick and easy with our
 </section>
 
 
-<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
 
   <img src={Door} alt="" />
   <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Door to Door Delivery</h3>
   <p className="text-lg px-3">This is the most common and convenient way of shipment for customers. In this case te custimer is free to all arrangements related to the ship freight container shipments</p>
 
 </section>
-<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
 
   <img src={Contract} alt="" />
 
@@ -223,45 +241,144 @@ We clear imports through any country customs and deliver quick and easy with our
 
 </section>
 
-<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full">
+<section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
   <img src={Custom} alt="" />
   <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Custom Brokerage</h3>
   <p className="text-lg px-3">
     Includes tarrif, custom laws, rules and regulatins for the clearance of imported and exported goods ro merchandise from custom authority; preparation of import and export documents including computation and payment duties, taxes and other charges accruing thereon.
   </p>
 </section>
+</div>
+
 </section>
 
-<section className="h-72 bg-gradient-to-bl from-black py-20 to-zinc-700 text-center px-4 text-white">
+<section className="h-72 bg-gradient-to-br from-blue-950 to-black py-20 text-center px-4 text-gray-100 md:h-96">
 
 
 
-<h2 className="text-3xl font-bold ">We Provide</h2>
-<p className="text-lg mt-4">The Best Sea And Air Freight Services.</p>
-<p className="text-lg mb-4">
+<h2 className="text-3xl font-bold md:text-4xl md:mb-5 ">We Provide</h2>
+<p className="text-lg mt-4 md:text-xl">The Best Sea And Air Freight Services.</p>
+<p className="text-lg mb-4 md:text-xl">
 
 You Can Book Your Shipping From any Country and you would be glad you did.
 </p>
 
 <div className="flex space-x-2 justify-center">
 
-<button className=" bg-white text-black rounded-md py-2">
+<button className=" bg-blue-500 text-white rounded-md py-2 md:w-1/6">
   Learn More
 </button>
 
-<button className="w-fit py-1  rounded-md border-2 border-white px-1">
+<button className="w-fit py-1 active:bg-red-400  rounded-md border-2 border-white px-1 md:w-1/6">
   Reach Out to Us Now
 </button>
 </div>
 
 
+
 </section>
 
-
+{/* 
 <section className="text-center mt-4">
   <h3 className="text-3xl font-bold">What People Say</h3>
+</section> */}
+
+
+<section className="mt-5 px-3 py-3 md:flex md:w-4/5 md:flex-wrap md:mx-auto  md:justify-center md:space-x-3 mb-10">
+
+  <div className="md:w-2/5">
+
+ <h3 className="text-3xl font-bold">ASPIRATION & VISION</h3>
+ <p>
+ When we started out, our main aim was to help people reach where they wanted their product and goods move to. Which is why we're Addy Prime Logistics. Transport movement is our specialization. After 8 years of operations, we have changed from just delivering to making customers happy.
+ </p>
+ </div>
+
+
+<div className="mt-4 md:w-2/5 md:mt-0">
+  <h3 className="text-3xl font-bold">QUALITY POLICY</h3>
+  <p>
+  We have a dedication and are bind by this dedication to offer and deliver 100% of what our customer's bring to us. Your goods are delivered in good shape and in cases where goods are not delivered in good shape, kindly notify us of this situation and the faulty party will bear the loss.
+
+  </p>
+</div>
+
+<div className="mt-4 md:w-2/5 ">
+  <h3 className="text-3xl font-bold">STRENGTH</h3>
+  <p>Our strength don't lie in the numbers of offices that we have worldwide, our strength doesn't lie in the number of staffs that we have, our strength doesn't lie in the number of transportation mechanisms that we have. It lies in the smile upon the faces of our customers and corporate bodies.</p>
+</div>
+
+<div className="mt-4 md:w-2/5 ">
+  <h3 className="text-3xl font-bold">PROJECT SHIPPING</h3>
+  <p>
+  We accept challenging cargo projects with confidence, assuring a safe & optimal move every time. Our roster of projects include humanitarian airlifts to such remote regions as Sudan, Indonesia, Kosovo and Pakistan as well as moves of massive industrial equipment across continents.
+  </p>
+</div>
 </section>
 
+
+<section className=" bg-gradient-to-br from-blue-950 to-black text-white py-4 px-5 md:flex md:flex-row-reverse md:justify-center md:space-x-4">
+  <section className="md:w-3/6 md:mt-12 md:ml-5">
+
+  <h3 className="text-3xl md:mb-4">Send us a message</h3>
+  <form className="md:flex md:flex-col">
+
+  <Input type="text" className="mb-3" placeholder="Enter your name" />
+  <Input type="text" className="mb-3" placeholder="Enter Subject" />
+  <Input type="email" className="mb-3" placeholder="Enter your email" name="" id="" />
+  <Input type="number" className="mb-3" placeholder="Enter your phone number" name="" id="" />
+  <Input type="text" className="mb-3" placeholder="Enter your message" />
+  <Button className="block bg-blue-600 md:w-fit">Send Now</Button>
+  </form>
+  </section>
+
+  <section className="md:w-1/5">
+
+
+
+<div className="text-center mt-10"> 
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-auto">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+</svg>
+
+  <h4 className="text-3xl">Address</h4>
+  <p>
+    North West Mudlands Mail Center, Sun Street, Wolverhampton, WV11AA
+  </p>
+</div>
+
+
+<div className="text-center mt-10"> 
+
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-auto">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+</svg>
+
+
+  <h4 className="text-3xl">Phone</h4>
+  <p>+44 7943 258552</p>
+</div>
+
+<div className="mt-10 text-center">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 mx-auto h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+</svg>
+
+  <h4 className="text-3xl">Email</h4>
+  <p>info@asapprimelogistics</p>
+</div>
+</section>
+
+
+</section>
+
+
+<footer className="bg-gray-200 py-5 px-10 text-center text-gray-700">
+  2023 ASAP Prime Logistics | All Rights Reserved.
+</footer>
 
 
 

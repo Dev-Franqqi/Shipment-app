@@ -1,4 +1,7 @@
 import React from 'react'
+import Translate from "./Translate";
+
+import Styles from "./Home.module.css";
 
 export default function Firstcomp() {
   return (
@@ -8,7 +11,7 @@ export default function Firstcomp() {
 
 
 
-  <div className="px-2 absolute bottom-20 text-white md:text-black">
+  <div className="px-2 absolute bottom-20 text-white">
 
 
    <Translate />
@@ -16,6 +19,7 @@ export default function Firstcomp() {
     <p className="text-2xl italic">Transportation and logistics</p>
 
     </div>
+    
 
   </div>
 
