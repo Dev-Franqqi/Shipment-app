@@ -27,13 +27,14 @@ export default function Nbar() {
     "Home",
     "About",
     "Shipment Tracking",
+    "Vision",
     "Contact",
    
   ];
 
   return (
     <Layout>
-      <Navbar isBordered className=" sticky top-0" variant="sticky">
+      <Navbar isBordered className=" sticky top-0 bg-white" variant="sticky">
         <Navbar.Brand className="w-full md:w-fit flex justify-between md:block ">
           <Navbar.Toggle className="w-1/5 md:hidden" aria-label="toggle navigation" />
         
@@ -42,13 +43,13 @@ export default function Nbar() {
           </Text>
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-          <Navbar.Link href="#">Home</Navbar.Link>
-          <Navbar.Link>
+          <Navbar.Link href="/">Home</Navbar.Link>
+          <Navbar.Link href="/about">
             About
           </Navbar.Link>
-          <Navbar.Link href="#">Shipment Tracking</Navbar.Link>
-          <Navbar.Link href="#">Vision</Navbar.Link>
-          <Navbar.Link href="#">Contact</Navbar.Link>
+          <Navbar.Link href="/about">Shipment Tracking</Navbar.Link>
+          <Navbar.Link href="/vision">Vision</Navbar.Link>
+          <Navbar.Link href="/contact">Contact</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content hideIn={'xs'}>
           
@@ -64,7 +65,7 @@ export default function Nbar() {
               css={{
                 minWidth: "100%",
               }}
-              href="#"
+              href={item==="Home"?'/':item}
             >
               {item}
             </Link>
