@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { Routes,Route } from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Nbar from "./components/Nbar";
 import Vision from "./pages/Vision";
 import Contact from "./pages/Contact";
@@ -9,12 +9,20 @@ export default function App() {
   return (
     <>
         <Nbar />
+
+
+        <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
        <Route path="/about" element={<About />}/>
       <Route path='/vision' element={<Vision />}/>
       <Route path="/contact" element={<Contact />}/>
       </Routes>
+
+      </BrowserRouter>
+
+      
+
 
       
 <footer className="bg-gray-200 py-5 px-10 text-center text-gray-700">
