@@ -65,7 +65,7 @@ export default function Nbar() {
               css={{
                 minWidth: "100%",
               }}
-              href={item==="Home"?'/':`/${item`}
+              href={item==="Home"?'/':`/${item}`}
             >
               {item}
             </Link>
