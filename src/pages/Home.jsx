@@ -50,6 +50,7 @@ export default function Home() {
       <button className="ml-2 mt-2 bg-blue-600 w-1/5 text-xl px-3 py-1.5 rounded-md text-white">Track</button>
 
 
+
      
 
     </div>
@@ -67,7 +68,7 @@ export default function Home() {
 <p>
 We clear imports through any country customs and deliver quick and easy with our customs brokerage programs. From high volume imports to small container loads, we provide transport and customs clearance to importers worldwide.</p>
 
-<button className="bg-white mb-3 mx-auto w-3/5 rounded-md h-10 text-xl text-black mt-3 md:w-fit md:text-lg md:px-3 md:mt-5 md:bg-blue-600 md:text-white" >Learn More ...</button>
+<Link to={"/about"} className="bg-white px-2 mb-3 mx-auto w-3/5 rounded-md h-10 text-xl text-black mt-3 md:w-fit md:text-lg md:px-3 md:mt-5 md:bg-blue-600 md:text-white" >Learn More ...</Link>
 </div>
 
 
@@ -321,11 +322,11 @@ You Can Book Your Shipping From any Country and you would be glad you did.
   <h3 className="text-3xl md:mb-4">Send us a message</h3>
   <form className="md:flex md:flex-col">
 
-  <Input type="text" className="mb-3" placeholder="Enter your name" />
-  <Input type="text" className="mb-3" placeholder="Enter Subject" />
-  <Input type="email" className="mb-3" placeholder="Enter your email" name="" id="" />
-  <Input type="number" className="mb-3" placeholder="Enter your phone number" name="" id="" />
-  <Input type="text" className="mb-3" placeholder="Enter your message" />
+  <Input label="Name" type="text" className="mb-3" placeholder="Enter your name" />
+  <Input label="Subject" type="text" className="mb-3" placeholder="Enter Subject" />
+  <Input label="email" type="email" className="mb-3" placeholder="Enter your email" name="" id="" />
+  <Input label="Phone number" type="number" className="mb-3" placeholder="Enter your phone number" name="" id="" />
+  <Input label="Message" type="text" className="mb-3" placeholder="Enter your message" />
   <Button className="block bg-blue-600 md:w-fit">Send Now</Button>
   </form>
   </section>

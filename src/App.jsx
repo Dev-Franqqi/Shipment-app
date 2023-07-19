@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Nbar from "./components/Nbar";
 import Vision from "./pages/Vision";
 import Contact from "./pages/Contact";
@@ -11,7 +11,7 @@ export default function App() {
         <Nbar />
 
 
-        <BrowserRouter>
+        <Router>
       <Routes>
         <Route path="/" element={<Home />}/>
        <Route path="/about" element={<About />}/>
@@ -19,7 +19,7 @@ export default function App() {
       <Route path="/contact" element={<Contact />}/>
       </Routes>
 
-      </BrowserRouter>
+      </Router>
 
       
 
