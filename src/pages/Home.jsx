@@ -158,7 +158,7 @@ We clear imports through any country customs and deliver quick and easy with our
     <p className=" text-lg px-3">
       With our broad range of Ocean Freight products covering different equipment types and consolidation services, we ensure your cargo
       reaches the right place, at the right time in a cost-efficient way.</p>   
-      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+      <Link className="pl-3 mt-3 text-blue-800 text-xl  underline" to="/services/ocean">Read more</Link>
     </section>
 
 
@@ -170,7 +170,7 @@ We clear imports through any country customs and deliver quick and easy with our
       <p className="text-lg px-3">
         Working together with carefully selected carriers..
       </p>
-      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+      <Link className="pl-3 mt-3 text-blue-800 text-xl underline" to="/services/air">Read more</Link>
 
     </section>
 
@@ -183,7 +183,7 @@ We clear imports through any country customs and deliver quick and easy with our
     <p className="text-lg px-3">At ASAP Prime Logistics we offer a comprehensice suit of capabilities and work with a range of best-in-class software partners</p>
     <p className="text-lg px-3">Our state-of-the-art systems monitors andn control all criticcal warehouse processes</p>
 
-    <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+    <Link className="pl-3 mt-3 text-blue-800 text-xl underline" to="/services/warehousing">Read more</Link>
     </section>
 
 
@@ -193,7 +193,7 @@ We clear imports through any country customs and deliver quick and easy with our
       <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Package & Store </h3>
       <p className="text-lg px-3">ASAP Prime Logistics dedicated and shared user warehousing solutions are not just about olding stock. There are a wider range of additional services that we offer, as part of an overall...</p>
 
-      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+      <Link className="pl-3 mt-3 text-blue-800 text-xl underline" to="/services/package">Read more</Link>
 
     </section>
 
@@ -203,8 +203,8 @@ We clear imports through any country customs and deliver quick and easy with our
 
       <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Railway Logistics</h3>
       <p className="text-lg px-3">ASAP Prime Logistics has a flexible, reliable and efficient overland transportation offering, including Road, Rail and Intermodal Services. We have a global capability with services operating...</p>
-``
-      <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+
+      <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/railway">Read more</Link>
     </section>
 
 
@@ -216,7 +216,7 @@ We clear imports through any country customs and deliver quick and easy with our
 
   <p className="text-lg px-3">We understand the importance of delivery of goods to their ultimate destination. As general freight forwarders we can arrange shipment of group package and full loads...</p>
 
-  <a className="pl-3 mt-3 text-blue-800 text-xl" href="#">Read more</a>
+  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/trucking">Read more</Link>
 </section>
 
 
@@ -225,6 +225,7 @@ We clear imports through any country customs and deliver quick and easy with our
   <img src={Door} alt="" />
   <h3 className="text-2xl mb-2 mt-4 font-semibold px-3 text-blue-900">Door to Door Delivery</h3>
   <p className="text-lg px-3">This is the most common and convenient way of shipment for customers. In this case te custimer is free to all arrangements related to the ship freight container shipments</p>
+  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/door">Read more</Link>
 
 </section>
 <section className="mt-4 rounded-md pb-4 bg-white border mb-5 px-2 w-full md:w-2/6">
@@ -237,6 +238,7 @@ We clear imports through any country customs and deliver quick and easy with our
     We have activities such as planning and designing supply chains, designing facilities, warehousing,transporting and distributing goods, processing orders, collecting payments, managing inventory and even providing certain aspects of customer service.
   </p>
    
+  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/warehousing">Read more</Link>
 
 </section>
 
@@ -246,6 +248,8 @@ We clear imports through any country customs and deliver quick and easy with our
   <p className="text-lg px-3">
     Includes tarrif, custom laws, rules and regulatins for the clearance of imported and exported goods ro merchandise from custom authority; preparation of import and export documents including computation and payment duties, taxes and other charges accruing thereon.
   </p>
+  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/custom">Read more</Link>
+
 </section>
 </div>
 
