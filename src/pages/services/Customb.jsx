@@ -7,7 +7,7 @@ export default function Customb() {
 <header className="bg-gradient-to-br from-blue-950 to-black text-white text-center py-12 ">
     <h1 className="text-2xl mb-1 font-bold md:text-4xl">CONTRACT BROKERAGE</h1>
 
-    <p className="font-semibold"> <span className="text-gray-400">Home</span> Services / Custom Brokerage</p>
+    <p className="font-semibold"> <span className="text-gray-400">Home/ </span> Services / Custom Brokerage</p>
 </header>
    
 

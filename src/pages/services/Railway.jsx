@@ -7,9 +7,9 @@ export default function Railway() {
 
              
 <header className="bg-gradient-to-br from-blue-950 to-black text-white text-center py-12 ">
-    <h1 className="text-2xl mb-1 font-bold md:text-4xl"></h1>RAILWAY
+    <h1 className="text-2xl mb-1 font-bold md:text-4xl">RAILWAY</h1>
 
-    <p className="font-semibold"> <span className="text-gray-400">Home</span> Services /  Railway</p>
+    <p className="font-semibold"> <span className="text-gray-400">Home/ </span> Services /  Railway</p>
 </header>
 
 

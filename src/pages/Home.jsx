@@ -31,6 +31,7 @@ export default function Home() {
 
 
     <div className="text-left">
+    <div id="google_translate_element"></div>
     <h2 className="text-3xl md:text-4xl font-bold mb-5">SHIPMENTS TRACKING</h2>
     <p className="text-md leading-5"><b>TRANSPORTATION & LOGISTICS -</b> Never be in the dark, know the full condition of your package an it's current location </p>
     </div>
@@ -238,7 +239,7 @@ We clear imports through any country customs and deliver quick and easy with our
     We have activities such as planning and designing supply chains, designing facilities, warehousing,transporting and distributing goods, processing orders, collecting payments, managing inventory and even providing certain aspects of customer service.
   </p>
    
-  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/warehousing">Read more</Link>
+  <Link className="pl-3 mt-8 text-blue-800 text-xl underline" to="/services/contract">Read more</Link>
 
 </section>
 

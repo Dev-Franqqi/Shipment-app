@@ -21,7 +21,7 @@ export default function Warehousing() {
 
 
 <div className="md:flex">
-    <div>
+    <div className="text-gray-500">
         <p className="md:text-lg">
         At Addy Prime Logistics we offer a comprehensive suite of capabilities and work with a range of best-in-class software partners. Our state-of-the-art systems monitor and control all critical warehouse processes.
         </p>

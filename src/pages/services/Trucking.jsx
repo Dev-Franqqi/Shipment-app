@@ -7,7 +7,7 @@ export default function Trucking() {
 <header className="bg-gradient-to-br from-blue-950 to-black text-white text-center py-12 ">
     <h1 className="text-2xl mb-1 font-bold md:text-4xl">TRUCKING</h1>
 
-    <p className="font-semibold"> <span className="text-gray-400">Home</span> Services /  Trucking</p>
+    <p className="font-semibold"> <span className="text-gray-400">Home/ </span> Services /  Trucking</p>
 </header>
 
 
@@ -15,7 +15,7 @@ export default function Trucking() {
 
     <h2 className="mt-5 text-2xl font-semibold text-blue-950 mb-5 md:text-4xl">TRUCKING /ROAD</h2>
 
-    <div className="flex"> 
+    <div className="md:flex"> 
 
         <div className="">
             <p className="text-gray-500 md:text-lg">
