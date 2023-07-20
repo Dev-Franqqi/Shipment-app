@@ -1,5 +1,6 @@
-import { Navbar, Button, Link, Text } from "@nextui-org/react";
+import { Navbar, Button, Text } from "@nextui-org/react";
 import { styled } from "@nextui-org/react"
+import { Link } from "react-router-dom"
 
 
 const Box = styled("div", {
@@ -43,13 +44,13 @@ export default function Nbar() {
           </Text>
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-          <Navbar.Link href="/">Home</Navbar.Link>
-          <Navbar.Link href="/about">
+          <Link to="/">Home</Link>
+          <Link to="/about">
             About
-          </Navbar.Link>
-          <Navbar.Link href="/about">Shipment Tracking</Navbar.Link>
-          <Navbar.Link href="/vision">Vision</Navbar.Link>
-          <Navbar.Link href="/contact">Contact</Navbar.Link>
+          </Link>
+          <Link to="/about">Shipment Tracking</Link>
+          <Link to="/vision">Vision</Link>
+          <Link to="/contact">Contact</Link>
         </Navbar.Content>
         <Navbar.Content hideIn={'xs'}>
           
@@ -65,7 +66,7 @@ export default function Nbar() {
               css={{
                 minWidth: "100%",
               }}
-              href={item==="Home"?'/':`/${item.toLowerCase()}`}
+              to={item==="Home"?'/':`/${item.toLowerCase()}`}
             >
               {item}
             </Link>
