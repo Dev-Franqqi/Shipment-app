@@ -1,14 +1,11 @@
-.firstSection{
-    background-image: url("./images/banner.jpg");
-    background-size: cover;
-    z-index: 0;
-    position: relative;
-    min-height: calc(100vh - 25vh);
-    object-fit: cover;
-    position:relative;
+.firstSection {
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+  min-height: calc(100vh - 25vh);
+  object-fit: cover;
+  position: relative;
 
-    padding-left: 0.5rem;
-    
+  padding-left: 0.5rem;
 }
-
-
