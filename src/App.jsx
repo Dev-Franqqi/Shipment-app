@@ -13,6 +13,7 @@ import Package from "./pages/services/Package";
 import Railway from "./pages/services/Railway";
 import Trucking from "./pages/services/Trucking";
 import Warehousing from "./pages/services/Warehousing";
+import Shipment from "./pages/Shipment";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shipment" element={<Shipment />} />
           <Route path="/about" element={<About />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/contact" element={<Contact />} />

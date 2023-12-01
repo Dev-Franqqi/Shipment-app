@@ -1,5 +1,5 @@
 // import Collapsible from "./components/Collapsible";
-
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Ship from "../components/images/blog1.jpg";
 import Abou from "../components/images/about1.jpg";
@@ -15,11 +15,58 @@ import Contract from "../components/images/contract.jpg";
 import Collapsible from "../components/Collapsible";
 import { Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
+import getShipment from "../utils/getShipment"
 import Firstcomp from "../components/Firstcomp";
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigate = useNavigate();
+  const [id, setId] = useState('')
+  const [shipment, setShipment] = useState();
+  const [error,setError] = useState()
+  const handleClick = async (e) => {
+    e.preventDefault();
+    setShipment(null)
+    setError(null)
+   
+    if (id!== '') {
+      try {
+        
+      const shipItem = await getShipment(id);
+      
+       
+        if (shipItem.error) {
+          setError(shipItem.error)
+          setId('')
+          return
+        }
+        setShipment(shipItem)
+        setId('')
+        navigate("/shipment", { state: { shipment: shipItem } });
+        
+      }
+      catch (error) {
+        return
+        }
+      
+    }
+  }
+
+  useEffect(() => {
+    
+  },[shipment])
   return (
     <>
+      
       <Firstcomp />
+      {shipment && <section>
+        {JSON.stringify(shipment)}
+     
+      
+      </section>}
+
+      {error && <div className="text-red-700">{error}</div>}
+      
 
       <main className="w-screen md:flex md:justify-center md:space-x-5 py-16 px-2 ">
         <div className="w-full md:w-3/5 px-2 text-left mb-3 md:mb-0">
@@ -39,9 +86,11 @@ export default function Home() {
           <input
             className="border w-3/5 rounded-md h-10 px-2 border-black text-lg font-semibold"
             placeholder="Enter Tracking Id"
+            value={id}
+            onChange={(e)=>{setId(e.target.value)}}
           />
 
-          <button className="ml-2 mt-2 bg-blue-600 w-1/5 text-xl px-3 py-1.5 rounded-md text-white">
+          <button onClick={handleClick} className="ml-2 mt-2 bg-blue-600 w-1/5 text-xl px-3 py-1.5 rounded-md text-white">
             Track
           </button>
         </div>
